@@ -1,0 +1,325 @@
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    padding-top: 76px;
+}
+:root {
+    --primary-color: #1B4332;      /* Deep Green */
+    --secondary-color: #E9C46A;    /* Gold */
+    --accent-color: #DAD7CD;       /* Soft Neutral */
+    --text-dark: #2D2D2D;          /* Charcoal */
+    --text-light: #7C7C7C;         /* Muted Gray */
+    --bg-light: #F5F3EF;           /* Elegant Off-White */
+}
+
+/* Navigation */
+.navbar {
+    background: rgba(27, 67, 50, 0.95); /* Semi-transparent Deep Green */
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    padding: 1rem 0;
+}
+
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: white !important;
+}
+
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 500;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--secondary-color) !important;
+}
+
+/* Page Header */
+.page-header {
+    background: linear-gradient(135deg, var(--primary-color), #1B4332);
+    padding: 120px 0 80px;
+    color: white;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.page-header .lead {
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+/* Service Cards */
+.service-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.1);
+}
+
+.service-icon i {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.service-card h4 {
+    color: var(--text-dark);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.service-card p {
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.service-features li {
+    color: var(--text-dark);
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e5e7eb;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.service-features li:before {
+    content: "✓";
+    color: var(--accent-color);
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+}
+
+.service-features li:last-child {
+    border-bottom: none;
+}
+
+/* Process Section */
+.process-section {
+    background: var(--bg-light);
+}
+
+.process-step {
+    text-align: center;
+    padding: 2rem 1rem;
+    position: relative;
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 auto 1.5rem;
+}
+
+.process-step h5 {
+    color: var(--text-dark);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.process-step p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+    background: white;
+}
+
+.cta-section h2 {
+    color: var(--text-dark);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.cta-section .lead {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.cta-buttons .btn {
+    margin: 0.5rem;
+}
+
+/* Footer */
+.footer {
+    background: var(--text-dark);
+    color: white;
+}
+
+.footer h5,
+.footer h6 {
+    color: var(--secondary-color);
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: var(--secondary-color);
+}
+
+.footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+.contact-info p {
+    margin-bottom: 0.8rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .service-card {
+        padding: 2rem;
+    }
+    
+    .service-icon {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .service-icon i {
+        font-size: 2rem;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}
+
+.btn-primary {
+    background-color: var(--primary-color); /* Deep Green */
+    color: #fff; /* White text for contrast */
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px; /* Modern rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #14532d; /* Darker green on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+.btn-primary:active {
+    background-color: #0f3d22; /* Even darker green for active state */
+    transform: translateY(0); /* Remove lift */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(27, 67, 50, 0.3); /* Green glow on focus */
+}
+.btn-outline-primary {
+    color: var(--primary-color); /* Deep Green text */
+    border: 2px solid var(--primary-color); /* Deep Green border */
+    background-color: transparent;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px; /* Modern rounded corners */
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color); /* Fill on hover */
+    color: #fff; /* White text when filled */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+     border: 2px solid var(--primary-color); 
+}
+
+.btn-outline-primary:active {
+    background-color: #14532d; /* Darker green on active */
+    border-color: #14532d;
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+     border: 2px solid var(--primary-color); 
+}
+
+.btn-outline-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(27, 67, 50, 0.3); /* Green focus glow */
+     border: 2px solid var(--primary-color); 
+}

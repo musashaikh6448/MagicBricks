@@ -1,0 +1,341 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  padding-top: 76px;
+}
+:root {
+  --primary-color: #1b4332; /* Deep Green */
+  --secondary-color: #e9c46a; /* Gold */
+  --accent-color: #dad7cd; /* Soft Neutral */
+  --text-dark: #2d2d2d; /* Charcoal */
+  --text-light: #7c7c7c; /* Muted Gray */
+  --bg-light: #f5f3ef; /* Elegant Off-White */
+}
+
+/* Navigation */
+.navbar {
+  background: rgba(27, 67, 50, 0.95); /* Semi-transparent Deep Green */
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: white !important;
+}
+
+.navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 500;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--secondary-color) !important;
+}
+
+/* Page Header */
+.page-header {
+  background: linear-gradient(135deg, var(--primary-color), #1b4332);
+  padding: 120px 0 80px;
+  color: white;
+}
+
+.page-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.page-header .lead {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+/* Featured Testimonial */
+.featured-testimonial {
+  background: white;
+}
+
+.featured-review {
+  background: white;
+  padding: 3rem;
+  border-radius: 25px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+.quote-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 2rem;
+}
+
+.quote-icon i {
+  font-size: 2rem;
+  color: white;
+}
+
+.featured-review blockquote {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: var(--text-dark);
+  font-style: italic;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.reviewer-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.reviewer-info img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary-color);
+}
+
+.reviewer-details h5 {
+  color: var(--text-dark);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.reviewer-details p {
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
+
+.rating {
+  color: var(--secondary-color);
+}
+
+/* Testimonials Grid */
+.testimonials-grid {
+  background: var(--bg-light);
+}
+
+.testimonial-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-card .rating {
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+}
+
+.testimonial-card p {
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.reviewer img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviewer-name h6 {
+  color: var(--text-dark);
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.reviewer-name span {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+/* Stats Section */
+.stats-section {
+  background: var(--primary-color);
+  color: white;
+}
+
+.stat-item h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--secondary-color);
+}
+
+.stat-item p {
+  font-size: 1.1rem;
+  margin-bottom: 0;
+  opacity: 0.9;
+}
+
+/* Footer */
+.footer {
+  background: var(--text-dark);
+  color: white;
+}
+
+.footer h5,
+.footer h6 {
+  color: var(--secondary-color);
+}
+
+.footer a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: var(--secondary-color);
+}
+
+.footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+.social-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background: var(--secondary-color);
+  transform: translateY(-3px);
+}
+
+.contact-info p {
+  margin-bottom: 0.8rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .featured-review {
+    padding: 2rem;
+  }
+
+  .featured-review blockquote {
+    font-size: 1.1rem;
+  }
+
+  .reviewer-info {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .testimonial-card {
+    padding: 1.5rem;
+  }
+
+  .stat-item h3 {
+    font-size: 2.5rem;
+  }
+}
+
+.btn-primary {
+  background-color: var(--primary-color); /* Deep Green */
+  color: #fff; /* White text for contrast */
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px; /* Modern rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #14532d; /* Darker green on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+.btn-primary:active {
+  background-color: #0f3d22; /* Even darker green for active state */
+  transform: translateY(0); /* Remove lift */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(27, 67, 50, 0.3); /* Green glow on focus */
+}
+.btn-outline-primary {
+  color: var(--primary-color); /* Deep Green text */
+  border: 2px solid var(--primary-color); /* Deep Green border */
+  background-color: transparent;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px; /* Modern rounded corners */
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color); /* Fill on hover */
+  color: #fff; /* White text when filled */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  border: 2px solid var(--primary-color);
+}
+
+.btn-outline-primary:active {
+  background-color: #14532d; /* Darker green on active */
+  border-color: #14532d;
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  border: 2px solid var(--primary-color);
+}
+
+.btn-outline-primary:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(27, 67, 50, 0.3); /* Green focus glow */
+  border: 2px solid var(--primary-color);
+}

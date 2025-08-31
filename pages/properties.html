@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties - PropertyPro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="../css/properties.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../index.html">
+                <i class="fas fa-building me-2"></i>MagicBricks
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Properties
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="properties.html">All Properties</a></li>
+                            <li><a class="dropdown-item" href="property-details.html">Property Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Our Team
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="agents.html">Our Agents</a></li>
+                            <li><a class="dropdown-item" href="agent-details.html">Agent Profile</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h1 class="page-title">Our Properties</h1>
+                    <p class="page-subtitle">Discover your perfect home from our extensive portfolio</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Filters -->
+    <section class="search-filters py-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 mb-3">
+                    <select class="form-select">
+                        <option>All Types</option>
+                        <option>House</option>
+                        <option>Apartment</option>
+                        <option>Villa</option>
+                        <option>Condo</option>
+                    </select>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <select class="form-select">
+                        <option>All Locations</option>
+                        <option>Beverly Hills</option>
+                        <option>Manhattan</option>
+                        <option>Austin</option>
+                        <option>Miami</option>
+                    </select>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <select class="form-select">
+                        <option>Any Bedrooms</option>
+                        <option>1+</option>
+                        <option>2+</option>
+                        <option>3+</option>
+                        <option>4+</option>
+                    </select>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <select class="form-select">
+                        <option>Price Range</option>
+                        <option>Under $300k</option>
+                        <option>$300k - $500k</option>
+                        <option>$500k - $1M</option>
+                        <option>Over $1M</option>
+                    </select>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <select class="form-select">
+                        <option>For Sale</option>
+                        <option>For Rent</option>
+                        <option>Sold</option>
+                    </select>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <button class="btn btn-primary w-100">
+                        <i class="fas fa-search me-2"></i>Filter
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Grid -->
+    <section class="properties-grid py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="property-card">
+                        <div class="property-image">
+                            <img src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg" alt="Modern Villa">
+                            <div class="property-badge sale">For Sale</div>
+                            <div class="property-actions">
+                                <button class="action-btn"><i class="fas fa-heart"></i></button>
+                                <button class="action-btn"><i class="fas fa-share"></i></button>
+                            </div>
+                        </div>
+                        <div class="property-content">
+                            <h5 class="property-title">Modern Villa</h5>
+                            <p class="property-location"><i class="fas fa-map-marker-alt me-2"></i>Beverly Hills, CA</p>
+                            <div class="property-features">
+                                <span><i class="fas fa-bed me-1"></i>4 Beds</span>
+                                <span><i class="fas fa-bath me-1"></i>3 Baths</span>
+                                <span><i class="fas fa-ruler-combined me-1"></i>2,500 sq ft</span>
+                            </div>
+                            <div class="property-price">$1,250,000</div>
+                            <a href="property-details.html" class="btn btn-primary w-100 mt-3">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="property-card">
+                        <div class="property-image">
+                            <img src="https://images.pexels.com/photos/280221/pexels-photo-280221.jpeg" alt="Downtown Apartment">
+                            <div class="property-badge rent">For Rent</div>
+                            <div class="property-actions">
+                                <button class="action-btn"><i class="fas fa-heart"></i></button>
+                                <button class="action-btn"><i class="fas fa-share"></i></button>
+                            </div>
+                        </div>
+                        <div class="property-content">
+                            <h5 class="property-title">Downtown Apartment</h5>
+                            <p class="property-location"><i class="fas fa-map-marker-alt me-2"></i>Manhattan, NY</p>
+                            <div class="property-features">
+                                <span><i class="fas fa-bed me-1"></i>2 Beds</span>
+                                <span><i class="fas fa-bath me-1"></i>2 Baths</span>
+                                <span><i class="fas fa-ruler-combined me-1"></i>1,200 sq ft</span>
+                            </div>
+                            <div class="property-price">$3,500/month</div>
+                            <a href="property-details.html" class="btn btn-primary w-100 mt-3">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="property-card">
+                        <div class="property-image">
+                            <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg" alt="Family House">
+                            <div class="property-badge sale">For Sale</div>
+                            <div class="property-actions">
+                                <button class="action-btn"><i class="fas fa-heart"></i></button>
+                                <button class="action-btn"><i class="fas fa-share"></i></button>
+                            </div>
+                        </div>
+                        <div class="property-content">
+                            <h5 class="property-title">Family House</h5>
+                            <p class="property-location"><i class="fas fa-map-marker-alt me-2"></i>Austin, TX</p>
+                            <div class="property-features">
+                                <span><i class="fas fa-bed me-1"></i>3 Beds</span>
+                                <span><i class="fas fa-bath me-1"></i>2 Baths</span>
+                                <span><i class="fas fa-ruler-combined me-1"></i>1,800 sq ft</span>
+                            </div>
+                            <div class="property-price">$450,000</div>
+                            <a href="property-details.html" class="btn btn-primary w-100 mt-3">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="property-card">
+                        <div class="property-image">
+                            <img src="https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg" alt="Luxury Condo">
+                            <div class="property-badge sale">For Sale</div>
+                            <div class="property-actions">
+                                <button class="action-btn"><i class="fas fa-heart"></i></button>
+                                <button class="action-btn"><i class="fas fa-share"></i></button>
+                            </div>
+                        </div>
+                        <div class="property-content">
+                            <h5 class="property-title">Luxury Condo</h5>
+                            <p class="property-location"><i class="fas fa-map-marker-alt me-2"></i>Miami, FL</p>
+                            <div class="property-features">
+                                <span><i class="fas fa-bed me-1"></i>2 Beds</span>
+                                <span><i class="fas fa-bath me-1"></i>2 Baths</span>
+                                <span><i class="fas fa-ruler-combined me-1"></i>1,400 sq ft</span>
+                            </div>
+                            <div class="property-price">$680,000</div>
+                            <a href="property-details.html" class="btn btn-primary w-100 mt-3">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="property-card">
+                        <div class="property-image">
+                            <img src="https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg" alt="Suburban Home">
+                            <div class="property-badge rent">For Rent</div>
+                            <div class="property-actions">
+                                <button class="action-btn"><i class="fas fa-heart"></i></button>
+                                <button class="action-btn"><i class="fas fa-share"></i></button>
+                            </div>
+                        </div>
+                        <div class="property-content">
+                            <h5 class="property-title">Suburban Home</h5>
+                            <p class="property-location"><i class="fas fa-map-marker-alt me-2"></i>Phoenix, AZ</p>
+                            <div class="property-features">
+                                <span><i class="fas fa-bed me-1"></i>4 Beds</span>
+                                <span><i class="fas fa-bath me-1"></i>3 Baths</span>
+                                <span><i class="fas fa-ruler-combined me-1"></i>2,200 sq ft</span>
+                            </div>
+                            <div class="property-price">$2,800/month</div>
+                            <a href="property-details.html" class="btn btn-primary w-100 mt-3">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="property-card">
+                        <div class="property-image">
+                            <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg" alt="Penthouse">
+                            <div class="property-badge sale">For Sale</div>
+                            <div class="property-actions">
+                                <button class="action-btn"><i class="fas fa-heart"></i></button>
+                                <button class="action-btn"><i class="fas fa-share"></i></button>
+                            </div>
+                        </div>
+                        <div class="property-content">
+                            <h5 class="property-title">Penthouse Suite</h5>
+                            <p class="property-location"><i class="fas fa-map-marker-alt me-2"></i>Chicago, IL</p>
+                            <div class="property-features">
+                                <span><i class="fas fa-bed me-1"></i>3 Beds</span>
+                                <span><i class="fas fa-bath me-1"></i>3 Baths</span>
+                                <span><i class="fas fa-ruler-combined me-1"></i>2,000 sq ft</span>
+                            </div>
+                            <div class="property-price">$1,850,000</div>
+                            <a href="property-details.html" class="btn btn-primary w-100 mt-3">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <nav aria-label="Properties pagination" class="mt-5">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-accent mb-3">PropertyPro</h5>
+                    <p>Your trusted partner in real estate. We help you find the perfect property that meets all your needs.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h6 class="text-accent mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="properties.html" class="footer-link">Properties</a></li>
+                        <li><a href="agents.html" class="footer-link">Our Agents</a></li>
+                        <li><a href="services.html" class="footer-link">Services</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h6 class="text-accent mb-3">Resources</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="blog.html" class="footer-link">Blog</a></li>
+                        <li><a href="faq.html" class="footer-link">FAQ</a></li>
+                        <li><a href="testimonials.html" class="footer-link">Testimonials</a></li>
+                        <li><a href="terms.html" class="footer-link">Terms</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h6 class="text-accent mb-3">Contact Info</h6>
+                    <p><i class="fas fa-map-marker-alt me-2"></i>123 Real Estate St, City, State 12345</p>
+                    <p><i class="fas fa-phone me-2"></i>(555) 123-4567</p>
+                    <p><i class="fas fa-envelope me-2"></i>info@propertypro.com</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p>&copy; 2025 PropertyPro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
